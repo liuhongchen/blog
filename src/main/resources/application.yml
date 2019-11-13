@@ -1,0 +1,7 @@
+spring:
+  thymeleaf:
+    mode: HTML
+  profiles:
+    active: dev
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect

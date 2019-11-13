@@ -1,0 +1,5 @@
+2019-11-13 11:00:19.328  INFO 11499 --- [restartedMain] com.blog.BlogApplication                 : Starting BlogApplication on MacBook-Pro with PID 11499 (/Users/admin/IdeaProjects/blog/target/classes started by admin in /Users/admin/IdeaProjects/blog)
+2019-11-13 11:00:19.330  INFO 11499 --- [restartedMain] com.blog.BlogApplication                 : The following profiles are active: prod
+2019-11-13 11:00:20.883  WARN 11499 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-13 11:00:21.043  WARN 11499 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-11-13 11:00:21.152  INFO 11499 --- [restartedMain] com.blog.BlogApplication                 : Started BlogApplication in 2.169 seconds (JVM running for 2.608)
