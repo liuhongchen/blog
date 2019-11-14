@@ -1,146 +1,146 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-<head th:replace="_fragments :: head(~{::title})">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>关于我</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-    <link rel="stylesheet" href="../static/css/me.css" th:src="@{/css/me.css}">
+<head  th:replace="_fragments :: head(~{::title})">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于我</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+  <link rel="stylesheet" href="../static/css/me.css">
 </head>
 <body>
 
-<!--导航-->
-<nav th:replace="_fragments :: menu(5)" class="ui inverted  attached segment m-padded-tb-mini m-shadow-small">
+  <!--导航-->
+  <nav th:replace="_fragments :: menu(5)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small" >
     <div class="ui container">
-        <div class="ui inverted secondary stackable menu">
-            <h2 class="ui teal header item">Blog</h2>
-            <a href="#" class="m-mobile-hide item m-item"><i class="mini home icon"></i>首页</a>
-            <a href="#" class=" m-mobile-hide item m-item"><i class="mini idea icon"></i>分类</a>
-            <a href="#" class="m-mobile-hide item m-item"><i class="mini tags icon"></i>标签</a>
-            <a href="#" class="m-mobile-hide item m-item"><i class="mini clone icon"></i>归档</a>
-            <a href="#" class="active m-mobile-hide item m-item"><i class="mini info icon"></i>关于我</a>
-            <div class="right m-mobile-hide item m-item">
-                <div class="ui transparent inverted input">
-                    <input type="text" placeholder="Search...">
-                    <i class="search link icon"></i>
-                </div>
-            </div>
+      <div class="ui inverted secondary stackable menu">
+        <h2 class="ui teal header item">Blog</h2>
+        <a href="#" class=" m-item item m-mobile-hide"><i class="mini home icon"></i>首页</a>
+        <a href="#" class=" m-item item m-mobile-hide"><i class="mini idea icon"></i>分类</a>
+        <a href="#" class="m-item item m-mobile-hide"><i class="mini tags icon"></i>标签</a>
+        <a href="#" class="m-item item m-mobile-hide"><i class="mini clone icon"></i>归档</a>
+        <a href="#" class="active m-item item m-mobile-hide"><i class="mini info icon"></i>关于我</a>
+        <div class="right m-item item m-mobile-hide">
+          <div class="ui icon inverted transparent input m-margin-tb-tiny">
+            <input type="text" placeholder="Search....">
+            <i class="search link icon"></i>
+          </div>
         </div>
+      </div>
     </div>
-    <a href="#" class="ui menu toggle black button m-right-top m-mobile-show">
-        <i class="sidebar icon "></i>
+    <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+      <i class="sidebar icon"></i>
     </a>
-</nav>
+  </nav>
 
-<!--中间内容-->
-<div class="m-container m-padded-tb-big">
+  <!--中间内容-->
+  <div  class="m-container m-padded-tb-big animated fadeIn">
     <div class="ui container">
-        <div class="ui stackable grid">
-            <div class="eleven wide column">
-                <div class="ui segment">
-                    <img src="https://picsum.photos/800/600?image=1005" alt="" class="ui rounded image">
-                </div>
-            </div>
-            <div class="five wide column">
-                <div class="ui top attached segment">
-                    <div class="ui header">关于我</div>
-                </div>
-                <div class="ui attached segment">
-                    <p class="m-text">刘洪辰，一个秋招凉凉正在准备春招的大四码狗，不断学习，喜欢学习新技术，喜欢健身，喜欢交友，欢迎加我微信跟我交流一起成长
-                    </p>
-                </div>
 
-                <div class="ui attached segment">
-                    <div class="ui orange basic label">编程</div>
-                    <div class="ui orange basic label">健身</div>
-                    <div class="ui orange basic label">打台球</div>
-                    <div class="ui orange basic label">交流</div>
-                    <div class="ui orange basic label">思考</div>
-                </div>
-                <div class="ui  attached segment">
-                    <div class="ui teal basic label m-margin-tb-tiny">Java</div>
-                    <div class="ui teal basic label m-margin-tb-tiny">Spring</div>
-                    <div class="ui teal basic label m-margin-tb-tiny">SpringBoot</div>
-                    <div class="ui teal basic label m-margin-tb-tiny">MyBatis</div>
-                    <div class="ui teal basic label m-margin-tb-tiny">MySQL</div>
-                    <div class="ui teal basic label m-margin-tb-tiny">shell</div>
-                    <div class="ui teal basic label m-margin-tb-tiny">Tomcat</div>
-                    <div class="ui teal basic label m-margin-tb-tiny">Nginx</div>
-                    <div class="ui teal basic label m-margin-tb-tiny">...</div>
-                </div>
-                <div class="ui bottom attached segment">
-                    <a href="https://github.com/liuhongchen" target="_blank" class="ui circular icon button"><i class="github icon"></i></a>
-                    <a href="#" class="ui wechat circular icon button"><i class="weixin icon"></i></a>
-                    <a href="#" class="ui qq circular icon button" data-content="892698613"
-                       data-position="bottom center"><i class="qq icon"></i></a>
-                </div>
-                <div class="ui wechat-qr flowing popup transition hidden">
-                    <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}" alt="" class="ui rounded image" style="width: 150px">
-
-                </div>
-            </div>
+      <div class="ui stackable grid">
+        <div class="eleven wide column">
+          <div class="ui segment">
+            <img src="https://unsplash.it/800/600?image=1005" alt="" class="ui rounded image">
+          </div>
         </div>
+        <div class="five wide column">
+          <div class="ui top attached segment">
+            <div class="ui header">关于我</div>
+          </div>
+          <div class="ui attached segment">
+            <p class="m-text">刘洪辰，一个秋招凉凉正在准备春招的大四码狗，终身学习者，喜欢学习新技术，喜欢健身，喜欢交友，欢迎加我微信跟我交流一起成长~</p>
+            <p class="m-text">本博客仅用作学习交流</p>
+          </div>
+          <div class="ui attached segment">
+            <div class="ui orange basic label">编程</div>
+            <div class="ui orange basic label">健身</div>
+            <div class="ui orange basic label">打台球</div>
+            <div class="ui orange basic label">交流</div>
+            <div class="ui orange basic label">思考</div>
+          </div>
+          <div class="ui attached segment">
+            <a href="#" th:href="@{/tags/{id}(id=${tag.id})}" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny" th:each="tag : ${tags}">
+              <span th:text="${tag.name}">方法论</span>
+            </a>
+<!--            <div class="ui teal basic left pointing label m-margin-tb-tiny">Java</div>-->
+<!--            <div class="ui teal basic left pointing label m-margin-tb-tiny">Spring</div>-->
+<!--            <div class="ui teal basic left pointing label m-margin-tb-tiny">SpringBoot</div>-->
+<!--            <div class="ui teal basic left pointing label m-margin-tb-tiny">MyBatis</div>-->
+<!--            <div class="ui teal basic left pointing label m-margin-tb-tiny">MySQL</div>-->
+<!--            <div class="ui teal basic left pointing label m-margin-tb-tiny">Redis</div>-->
+<!--            <div class="ui teal basic left pointing label m-margin-tb-tiny">Tomcat</div>-->
+<!--            <div class="ui teal basic left pointing label m-margin-tb-tiny">Nginx</div>-->
+<!--            <div class="ui teal basic left pointing label m-margin-tb-tiny">shell</div>-->
+            <div class="ui teal basic left pointing label m-margin-tb-tiny">...</div>
+          </div>
+          <div class="ui bottom attached segment">
+            <a href="https://github.com/liuhongchen" class="ui circular icon button"><i class="github icon"></i></a>
+            <a href="#" class="ui wechat circular icon button"><i class="weixin icon"></i></a>
+            <a href="#" class="ui qq circular icon button" data-content="892698613" data-position="bottom center"><i class="qq icon"></i></a>
+          </div>
+
+          <div class="ui wechat-qr flowing popup transition hidden">
+            <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}" alt="" class="ui rounded image" style="width: 110px">
+          </div>
+          </div>
+      </div>
+
     </div>
-</div>
-<br>
-<br>
-<!--底部-->
-<footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+  </div>
+
+  <br>
+  <br>
+  <!--底部footer-->
+  <footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
     <div class="ui center aligned container">
-        <div class="ui inverted divided stackable grid">
-            <div class="three wide column">
-                <div class="ui inverted link list">
-                    <div class="item">
-                        <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}"  class="ui rounded image" style="width: 110px">
-                    </div>
-                </div>
+      <div class="ui inverted divided stackable grid">
+        <div class="three wide column">
+          <div class="ui inverted link list">
+            <div class="item">
+              <img src="../static/images/wechat.jpg" class="ui rounded image" alt="" style="width: 110px">
             </div>
-            <div class="three wide column">
-                <h4 class="ui inverted header m-text-spaced m-opacity-mini">最新博客</h4>
-                <div class="ui inverted link list">
-                    <a href="#" class="item">用户故事(User Story)</a>
-                    <a href="#" class="item">用户故事(User Story)</a>
-                    <a href="#" class="item">用户故事(User Story)</a>
-                </div>
-            </div>
-            <div class="three wide column">
-                <h4 class="ui inverted header m-text-spaced m-opacity-mini">联系我</h4>
-                <div class="ui inverted link list">
-                    <a href="#" class="item">Email: 892698613&#64qq.com</a>
-                    <a href="#" class="item">QQ: 892698613</a>
-                </div>
-            </div>
-            <div class="seven wide column">
-                <h4 class="ui inverted header m-text-spaced m-opacity-mini">Blog</h4>
-                <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客</p>
-            </div>
+          </div>
         </div>
-        <div class="ui inverted section divider"></div>
-        <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright &copy; 2019 - 2019 blog Designed by
-            LiuHongchen</p>
+        <div class="three wide column">
+          <h4 class="ui inverted header m-text-thin m-text-spaced " >最新博客</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item m-text-thin">用户故事（User Story）</a>
+            <a href="#" class="item m-text-thin">用户故事（User Story）</a>
+            <a href="#" class="item m-text-thin">用户故事（User Story）</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item m-text-thin">Email：892698613@qq.com</a>
+            <a href="#" class="item m-text-thin">QQ：892698613</a>
+          </div>
+        </div>
+        <div class="seven wide column">
+          <h4 class="ui inverted header m-text-thin m-text-spaced ">Blog</h4>
+          <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客...</p>
+        </div>
+      </div>
+      <div class="ui inverted section divider"></div>
+      <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2019 - 2019 Liuhongchen Designed by LiuHongchen</p>
     </div>
-</footer>
 
-<!--/*/<th:block th:replace="_fragments :: script">/*/-->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-<!--/*/</th:block>/*/-->
+  </footer>
+  <!--/*/<th:block th:replace="_fragments :: script">/*/-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+  <!--/*/</th:block>/*/-->
 
-<script>
+  <script>
     $('.menu.toggle').click(function () {
-        $('.m-item').toggleClass('m-mobile-hide')
+      $('.m-item').toggleClass('m-mobile-hide');
     });
-
 
     $('.wechat').popup({
-        popup : $('.wechat-qr.popup'),
-        on : 'hover',
-        position : 'bottom center'
+      popup : $('.wechat-qr'),
+      position: 'bottom center'
     });
-
-
     $('.qq').popup();
 
-</script>
+  </script>
 </body>
 </html>
